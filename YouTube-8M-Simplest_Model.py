@@ -1,3 +1,12 @@
+"""
+Add below code in the "/youtube-8m-master/video_level_models.py"
+
+You can run this code from console(terminal). I use Windows PowerShell.
+
+python train.py --feature_names='mean_rgb,mean_audio' --feature_sizes='1024,128' --model='MyModel' --train_data_pattern=C:/Users/yoon/Desktop/youtube8m/yt8m/v2/video/train*.tfrecord --train_dir C:/Users/yoon/Desktop/youtube8m/yt8m/v2/models/video/sample_model --start_new_model
+
+"""
+
 def create_model(self, model_input, vocab_size, l2_penalty=1e-8, **unused_params):
     """Creates a my model.
 
